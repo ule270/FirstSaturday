@@ -12,17 +12,24 @@ public class WriteIFs
     public void playerDied(boolean player1) {
         // Write an IF statement that checks “player1.isAlive()” 
         // and if that’s false, calls “displayGameOver(player1)”
-     
+     if (player1 == true) {
+         ss = ("Game Over!");
+         } else {
+         ss = ("Player 1 is alive");
+     }
     }
     
     public String thermoSTAT(int room) {
         // Write an IF statement that checks the 
         // “temperature(room)” and if that check is less than 70, 
         // calls “heatOn()” else calls “coolOn()”
-
-
-        
-        return this.ss;
+        String thermoSTAT;
+        if (room < 70) {
+            thermoSTAT = "heating";
+        } else {
+            thermoSTAT = "cooling";
+        }
+        return thermoSTAT;
     }
 
     public void fireplaceControl(Object fireplace1) {
@@ -31,13 +38,18 @@ public class WriteIFs
         // AND 
         // “insideTemp()” is less than 62, 
         // calls “startAFire(fireplace1)”
-
+        Integer tt_s;
+        if (outsideTemp() < 50 && insideTemp() < 62) {
+            startAFire(fireplace1);
+        }
     }
 
     public void checkFuel(double fuelLevel) {
         // Write an IF statement that checks “fuelLevel” 
         // and if that check is less than 0.08, calls “refuel()”
-
+        if (fuelLevel <0.08) {
+            refuel();
+        }
     }
 
 
