@@ -3,8 +3,8 @@ package src.main.java;
 /**
  * Write a description of class src.main.java.WriteIFs here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Uyen)
+ * @version (3.5.23)
  */
 public class WriteIFs
 {
